@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/flatly.bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href='#') Start Bootstrap
+        |         
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        |         
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='#')
+                | Home
+                span.sr-only (current)
+            |             
+            li.nav-item
+              a.nav-link(href='#') About
+            |             
+            li.nav-item
+              a.nav-link(href='#') Contact
+            |             
+            li.nav-item
+              a.nav-link(href='#') Sign In
+    .container
+      block content
+    footer.py-5.bg-dark
+      .container
+        p.m-0.text-center.text-white Copyright &copy; Your Website 2017
+    script(src='/javascripts/jquery-3.2.1.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+
