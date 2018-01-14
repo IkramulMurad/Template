@@ -8,8 +8,10 @@ html
   body
     nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
       .container
-        a.navbar-brand(href='#') Start Bootstrap
+        a.navbar-brand(href='#')
+          img(src="/images/logo.jpg", alt="Micro URL", height="30px")
         |         
+        p.navbar-brand.text-white(style="font-size: 20px;") Life is short, So does URL
         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
           span.navbar-toggler-icon
         |         
@@ -28,11 +30,11 @@ html
             |             
             li.nav-item
               a.nav-link(href='#') Sign In
-    .container
+    .container(style="padding-top:100px;")
       block content
     footer.py-5.bg-dark
       .container
-        p.m-0.text-center.text-white Copyright &copy; Your Website 2017
+        p.m-0.text-center.text-white Copyright &copy; Ikramul Murad 2018
     script(src='/javascripts/jquery-3.2.1.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
 
